@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "c7d6be88-7be6-47cc-885e-25ff8dae1fbf",
+		"name": "CS571 S23 Week06 Shareable",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9136549"
+	},
+	"item": [
+		{
+			"name": "Get Tickets",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-CS571-ID",
+						"value": "ENTER_YOUR_BID",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cs571.org/s23/week6/api/tickets",
+					"protocol": "https",
+					"host": [
+						"cs571",
+						"org"
+					],
+					"path": [
+						"s23",
+						"week6",
+						"api",
+						"tickets"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Ticket",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-CS571-ID",
+						"value": "ENTER_YOUR_BID",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Hello world\",\r\n    \"content\": \"this is a ticket!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cs571.org/s23/week6/api/tickets",
+					"protocol": "https",
+					"host": [
+						"cs571",
+						"org"
+					],
+					"path": [
+						"s23",
+						"week6",
+						"api",
+						"tickets"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
